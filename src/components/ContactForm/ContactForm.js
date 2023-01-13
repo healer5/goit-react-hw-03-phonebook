@@ -1,5 +1,5 @@
 import { Button, InputForm, Error } from './ContactForm.styled';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import shortid from 'shortid';
 import { Formik, Form } from 'formik';
 
@@ -59,6 +59,6 @@ export const ContactForm = ({ onSubmit }) => {
   );
 };
 
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-// };
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
